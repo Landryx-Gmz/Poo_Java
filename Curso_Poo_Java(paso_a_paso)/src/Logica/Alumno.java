@@ -9,6 +9,47 @@ public class Alumno {
     String nombre;
     String apellido;
 
+    //Creamos un constructor (o metodo de constructores) con el atajo (Alt Insert) constructor y no seleccionamos ningun atributo.
+    public Alumno() {
+    }
+
+    //Creamos el mismo constructor pero seleccionando todos los atributos
+    public Alumno(int id, String nombre, String apellido) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+
+
+    }
+    //Luego los llamamos en el main.
+
+
+    //Getter and Setter(por convencion se colocan despues de los metodos constructores.
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
 
     //Creamos sus METODOS o Acciones (cosas que puede hacer siempre son verbos en infinitivo).
     //ejemplo: mostrar su nombre(mostrarNombre) y saber si a aprobado(saberAprovado).
@@ -28,17 +69,9 @@ public class Alumno {
         }
 
     }
-    //Creamos un constructor con el atajoj(Alt Insert) constructor y no seleccionamos ningun atributo.
-    public Alumno() {
-    }
-
-    //Creamos el mismo constructor pero seleccionando todos los atributos
-    public Alumno(int id, String nombre, String apellido) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
 
 
-    }
-    //Luego los llamamos en el main.
+
+
+
 }

@@ -1,0 +1,80 @@
+                                                    --APUNTES POO--
+(código para salida de consola limpia -q exec:java -Dexec.mainClass=Logica.poo.Poo)
+
+CLASES
+-¿Qué son las clases? ¿Cómo crear una?
+Las clases son plantillas o moldes que nos permiten construir objetos. Es una de las principales formas de abstraer objetos de la vida real para utilizarlos en el mundo lógico en las aplicaciones Java que desarrollemos.
+
+Por ejemplo: Si tuviéramos la clase auto, esta contendría las principales partes/elementos que tiene un auto para poder construirlo o representarlo a nivel lógico.
+
+Todas las clases tienen las siguientes características o particularidades:
+
+✅ Representan «entidades» del mundo real.
+✅ Poseen atributos y métodos (ya veremos más adelante ambos conceptos).
+✅ Para poder hacer uso de ellas, debemos crear «instancias» u «objetos» (conceptos que iremos profundizando de a poco).
+
+-Atributos de una clase:
+
+Los atributos son características que posee una clase. Son variables contenidas y establecidas por los objetos y normalmente cuentan con un tipo de dato asociado. 
+
+Por ejemplo, supongamos que queremos armar una clase para un PetShop que represente a las Mascotas que podrían arribar al mismo. ¿Cuáles serían los atributos de ésta clase?
+
+Mascota
+*nombre
+*especie
+*raza
+*color
+*pelaje
+*peso
+
+
+
+METODOS:
+
+¿Qué son los métodos? ¿Cómo crear uno?
+Las operaciones o métodos son acciones contenidas en una clase y ayudar a definir el comportamiento de la misma, diciendo cuáles son las acciones que ésta puede hacer.
+
+Dentro de un sistema, los métodos suelen estar representados como verbos en infinitivo y puede tener opcionalmente valores de entrada (Parámetros) y valores de salida (Retorno).
+
+Existen métodos que pueden ser Procedimientos (no retornan un valor) o Funciones (retornan un valor de un tipo de dato en particular).
+
+
+Valores de entrada o parámetros
+
+Los parámetros son valores que pueden ser enviados en un método. Los métodos toma los parámetros como valores de entrada, y así puede realizar las acciones necesarias a partir de los mismos.
+
+Todos los parámetros deben tener un tipo de dato asociado (como así también pueden haber parámetros vacíos).
+
+Por ejemplo:
+Auto
+color String
+encender()------>sin parámetro
+acelerar(int)--->parámetro int la cantidad de 'km' a acelerar
+frenar(int)----->parámetro int la cantidad de 'km'a bajar la velocidad
+
+
+Valor de Salida o Retorno
+La salida de un método es un valor en particular que el mismo retorna luego de haber realizado una serie de acciones o procesos. Los valores de entrada son datos, y los valores de salida son considerados  generalmente como información.
+
+Todos los valores de salida deben tener un tipo de dato asociado. En los métodos, es posible retornar un único valor de salida y ésta acción se lleva a cabo mediante la palabra reservada return.
+
+ENTRADA--->PROCESO--->SALIDA
+
+
+
+
+--Métodos Constructores y Objetos:
+
+En Java, los objetos son instancias de clases y se crean mediante la invocación de un método llamado constructor. Un objeto en programación es, generalmente, la representación lógica de un objeto en la vida real. Posee un estado(de acuerdo a sus atributos) y posee un comportamiento (realizan operaciones de acuerdo a sus métodos).
+
+Un constructor es un método especial que se llama automáticamente cuando se crea un objeto de una clase.
+
+Los constructores se utilizan para inicializar los atributos de un objeto cuando se crea. Cada clase puede tener uno o más constructores y cada constructor tiene un nombre idéntico al de la clase propiamente dicha.
+
+
+--Getters y Setters:
+En Java, los getters y setters son métodos utilizados para acceder y modificar los valores de los atributos de una clase de manera controlada y segura. Los getters se utilizan para obtener el valor de un atributo, mientras que los setters se utilizan para establecer o modificar el valor de un atributo.
+
+En términos simples, los getters y setters permiten que los atributos de una clase se mantengan privados y no se puedan acceder directamente desde fuera de la clase.
+
+Por buena practica se suelen agregar después de los métodos constructores Y antes de los métodos personalizados o métodos de comportamiento.
