@@ -78,3 +78,50 @@ En Java, los getters y setters son métodos utilizados para acceder y modificar 
 En términos simples, los getters y setters permiten que los atributos de una clase se mantengan privados y no se puedan acceder directamente desde fuera de la clase.
 
 Por buena practica se suelen agregar después de los métodos constructores Y antes de los métodos personalizados o métodos de comportamiento.
+
+Propiedades de la POO
+En Java, la Programación Orientada a Objetos (POO) se basa en cuatro conceptos fundamentales:
+
+Abstracción
+Herencia
+Polimorfismo
+Encapsulamiento
+Veamos un poquito algunas características de cada uno de ellos:
+
+Abstracción: La abstracción en la POO es el proceso de identificar y separar las características esenciales de un objeto de la vida real para representarlas de forma abstracta o lógica en un programa. En Java, esto se logra mediante la creación de clases y la definición de sus atributos y métodos.
+
+Herencia: La herencia es un mecanismo en Java que permite que una clase herede propiedades y métodos de una clase padre/madre.
+
+Polimorfismo: Etimológicamente podemos decir que significa Poli: Muchas, Morfismo: Formas. El polimorfismo en Java es la capacidad de un objeto para tomar muchas formas diferentes. 
+
+Encapsulamiento: El encapsulamiento es un mecanismo que permite ocultar los detalles de implementación de un objeto y proporciona una interfaz pública para que otros objetos interactúen con él. 
+
+Habiéndolas conocido un poco, veamos un poco más en detalle una de las más importantes y utilizadas a la hora de desarrollar con Java. ¡La herencia!
+
+
+
+--Herencia:
+En la programación orientada a objetos, la herencia es un concepto clave que permite a una clase adquirir los atributos y comportamientos de otra. 
+
+La herencia nos permite reutilizar clases. Generalmente al utilizar herencia se crea una nueva clase que «hereda» o «extiende» métodos y atributos de una clase ya existente sin tener que reescribir el código asociado a esta última. Esta nueva clase es denominada generalmente como subclase o también clase hija y puede poseer atributos y métodos que no existan en la clase original. Por otro lado, la clase original es conocida como super clase o también clase padre/madre.
+
+Al igual que la «herencia genética» en la vida real, donde los hijos heredamos ciertas características y comportamientos de nuestros padres, en la «herencia de programación» se cumple exactamente el mismo concepto. ¡Veamos un ejemplo!
+
+ejemplo herencia java
+Persona es una clase genérica que sirve para almacenar datos en común de todas las personas, como el nombre, la dirección, el número de teléfono, etc.
+
+
+	--Persona--
+	___________
+	___________
+	     ^ 	
+--Empleado-- | --Consultor
+____________<|>___________
+____________   ___________
+
+
+Empleado hereda estos mismos atributos de la clase Persona, pero puede incluir atributos propios, como por ejemplo, num de legajo, puesto, cargo, etc.
+
+Consultor también hereda los mismos atributos en común de la clase persona, mientras que puede incluir otros atributos propios, como empresa Consultora, id de consultor, etc.
+
+Al mismo tiempo, Empleado y Consultor son entre si clases hermanas. Al igual que en la vida real, ambas heredan las mismas características de s clase padre, sin embargo, ambas pueden poseer de igual manera atributos y métodos que sean propios y que las diferencia entre si.
