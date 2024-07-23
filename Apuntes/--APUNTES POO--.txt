@@ -138,3 +138,28 @@ En Java, esto se logra a través de la herencia y los métodos de sobreescritura
 El polimorfismo permite tratar un perro o un gato como un animal genérico. Por ejemplo, si tienes un método que toma un parámetro de tipo «Animal», puedes pasarle tanto un objeto perro como un objeto gato. Esto se debe a que los objetos perro y gato son subtipos de Animal.
 
 Otro ejemplo clásico es con estructuras como por ejemplo un vector/array. Si declaramos un vector de tipo Animal, dentro de el podremos poner objetos de tipo Perro y objetos de tipo Gato por más que sean distintos por el simple hecho de heredar de la clase Animal y tener eso en común.
+
+
+
+
+--Encapsulamiento:
+
+El Encapsulamiento en Java es una propiedad que nos permite ocultar los detalles internos de una clase y proporcionar acceso controlado a sus atributos y métodos, mediante palabras reservadas llamadas «modificadores de acceso«.
+
+Modificadores de Acceso en Java
+En Java, hay cuatro modificadores de acceso que controlan la visibilidad y accesibilidad de las clases, atributos, métodos y constructores. A continuación te contamos de forma sencilla qué permite llevar a cabo cada uno de ellos:
+
+-Public: Es el modificador de acceso más abierto y utilizado. Los miembros (atributos, métodos, constructores) declarados como públicos son accesibles desde cualquier clase y paquete. Pueden ser utilizados por cualquier objeto que tenga acceso a la clase.
+
+-Protected: Los miembros declarados como protected son accesibles SOLO dentro de la misma clase, en clases hijas (subclases) y dentro del mismo paquete.
+
+-Private: Es el modificador de acceso más restrictivo. Los miembros declarados como privados son accesibles solo dentro de la misma clase. No pueden ser accedidos ni siquiera por clases derivadas de la misma.
+
+-Default (sin modificador): Si no se especifica ningún modificador de acceso, se considera el acceso por defecto. Los miembros con acceso por defecto son accesibles solo dentro del mismo paquete. No pueden ser accedidos desde clases en paquetes diferentes.
+
+Ejemplo
+Veamos un ejemplo práctico. Supongamos que tenemos una clase llamada «Persona» con atributos como nombre, apellido, edad y dirección. En lugar de permitir que otros objetos accedan directamente a estos atributos, podemos declararlos como «privados» utilizando el modificador de acceso «private». Esto significa que solo la propia clase va a poder acceder a ellos.
+
+Supongamos que creamos también en esta clase los getters y setters y los establecemos como «Public». Los getters son métodos que devuelven el valor de un atributo y los setters son métodos que establecen un nuevo valor para el atributo, al ser públicos van a poder ser accesibles desde cualquier otra clase a través de la instancia o creación de un objeto de la clase en cuestión. Estos métodos públicos actúan como intermediarios para acceder a los atributos privados de la clase.
+
+En este simple ejemplo aplicamos dos modificadores de acceso y aseguramos que los objetos mantengan un estado consistente .
