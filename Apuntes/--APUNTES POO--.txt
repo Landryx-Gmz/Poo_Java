@@ -125,3 +125,16 @@ Empleado hereda estos mismos atributos de la clase Persona, pero puede incluir a
 Consultor también hereda los mismos atributos en común de la clase persona, mientras que puede incluir otros atributos propios, como empresa Consultora, id de consultor, etc.
 
 Al mismo tiempo, Empleado y Consultor son entre si clases hermanas. Al igual que en la vida real, ambas heredan las mismas características de s clase padre, sin embargo, ambas pueden poseer de igual manera atributos y métodos que sean propios y que las diferencia entre si.
+
+
+
+
+--Polimorfismo:
+
+El Polimorfismo en Java se refiere a la capacidad de un objeto de tomar muchas formas diferentes (poli = muchas, morfismo = formas). En términos más simples, significa que un objeto puede ser tratado como si fuera de varios tipos.
+
+En Java, esto se logra a través de la herencia y los métodos de sobreescritura. Supongamos que tienes una clase base llamada «Animal» y clases derivadas como «Perro» y «Gato«. Tanto los perros como los gatos son animales, por lo que pueden heredar de la clase base «Animal«.
+
+El polimorfismo permite tratar un perro o un gato como un animal genérico. Por ejemplo, si tienes un método que toma un parámetro de tipo «Animal», puedes pasarle tanto un objeto perro como un objeto gato. Esto se debe a que los objetos perro y gato son subtipos de Animal.
+
+Otro ejemplo clásico es con estructuras como por ejemplo un vector/array. Si declaramos un vector de tipo Animal, dentro de el podremos poner objetos de tipo Perro y objetos de tipo Gato por más que sean distintos por el simple hecho de heredar de la clase Animal y tener eso en común.
