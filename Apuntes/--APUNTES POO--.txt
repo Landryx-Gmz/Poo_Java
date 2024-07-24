@@ -186,3 +186,22 @@ Una clase abstracta se utiliza como una abstracción general de la cual se deriv
 
 
 
+--Interfaces:
+
+Las interfaces en Java son una colección de métodos abstractos y atributos que pueden ser únicamente constantes. Básicamente, se puede ver a una interfaz como un conjunto de comportamientos/métodos que una clase puede luego implementar.
+
+En lugar de proporcionar una implementación concreta de los métodos, una interfaz solo declara los nombres de los métodos y los parámetros que aceptan. Las clases que implementan una interfaz deben ser las encargadas de proporcionar la implementación de todos los métodos declarados en la misma.
+
+⚠️ En pocas palabras, así como una clase abstracta podemos verla como una «plantilla» de atributos y métodos abstractos para otras clases; a las interfaces podemos verlas como «plantillas» de métodos o comportamientos, ya que no es considerada una buena práctica que las mismas posean atributos y en caso de que los posean, deben ser constantes.
+
+⚠️ Por otro lado,  una de las características más importantes de las interfaces en Java es que le brindan la posibilidad a este de implementar la conocida «Herencia múltiple».
+
+En forma resumida podemos decir que una interfaz:
+
+Es una colección de métodos abstractos con propiedades (atributos) CONSTANTES.
+Solamente puede extender o implementar otras interfaces (la cantidad que quiera).
+Da a conocer qué se debe hacer (métodos) pero sin mostrar su implementación (Solo puede tener métodos abstractos).
+Solo puede tener métodos con acceso público (no pueden ser protected o private)
+Solo puede tener “variables” public static final (o sea constantes)
+La palabra “abstract” en la definición de métodos no es obligatoria.
+Generalmente las interfaces indican el “PUEDE HACER” de un objeto.
