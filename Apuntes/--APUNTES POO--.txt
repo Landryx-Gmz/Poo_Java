@@ -163,3 +163,26 @@ Veamos un ejemplo práctico. Supongamos que tenemos una clase llamada «Persona�
 Supongamos que creamos también en esta clase los getters y setters y los establecemos como «Public». Los getters son métodos que devuelven el valor de un atributo y los setters son métodos que establecen un nuevo valor para el atributo, al ser públicos van a poder ser accesibles desde cualquier otra clase a través de la instancia o creación de un objeto de la clase en cuestión. Estos métodos públicos actúan como intermediarios para acceder a los atributos privados de la clase.
 
 En este simple ejemplo aplicamos dos modificadores de acceso y aseguramos que los objetos mantengan un estado consistente .
+
+
+
+--Abstracción:
+
+-Clases Abstractas
+Sin dudas, las clases abstractas son uno de los temas MÁS TEMIDOS en lo que es POO con Java… Pero… ¡No te preocupes! En este clase vas a aprender con todo ¿Qué son? y ¿Para qué se utilizan?
+
+⚠️ Existe un concepto muy parecido que son las INTERFACES, no te preocupes que en las próximas clases hablaremos de ellas y de su diferencia con las clases abstractas, pero por ahora, arranquemos a hablar de éstas últimas.
+
+Una clase abstracta en Java es una clase que no puede ser instanciada directamente, es decir, no se pueden (o deben) crear objetos de esa clase específica. Se utiliza como una clase base o plantilla para otras clases relacionadas.
+
+La principal característica de una clase abstracta es que puede tener métodos abstractos. Un método abstracto es abstracto cuando está declarado pero sin su implementación, es decir, no contiene entre sus «llaves» nada de código.  En un método abstracto, solo se declara su firma, incluyendo el nombre del método y los parámetros que acepta cerrando la línea con «;», nada más que eso.
+
+Cuando una clase declara al menos un método abstracto, se debe marcar como abstracta utilizando la palabra clave «abstract». Una clase abstracta puede tener tanto métodos abstractos como métodos concretos (implementados), pero si o si debe implementar al menos un método abstracto para considerarse como clase abstracta como tal.
+
+Las clases que heredan de una clase abstracta, llamadas subclases o clases hijas, deben proporcionar una implementación para todos los métodos abstractos heredados. Esto significa que las subclases deben completar/implementar los métodos abstractos declarados en la clase abstracta.
+
+Una clase abstracta se utiliza como una abstracción general de la cual se derivan clases más específicas. Proporciona una estructura común y define los métodos abstractos que deben implementarse en las subclases. Esto promueve la reutilización del código y la creación de jerarquías de clases.
+
+
+
+

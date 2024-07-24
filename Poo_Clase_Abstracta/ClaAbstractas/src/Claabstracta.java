@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class Claabstracta {
+public class Claabstracta {
+    public static void main(String[] args) {
+
+    }
 }
