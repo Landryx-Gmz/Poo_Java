@@ -1,5 +1,4 @@
-                                                    --APUNTES POO--
-(código para salida de consola limpia -q exec:java -Dexec.mainClass=Logica.poo.Poo)
+                                                  --APUNTES POO PROPIEDADES--
 
 CLASES
 -¿Qué son las clases? ¿Cómo crear una?
