@@ -25,8 +25,8 @@ public class Arraylist {
         System.out.println("-----FOREACH-----");
 
         //RECORRIDO FOREACH
-        //por cada nombre de la clase creada(Persona)+ variable auxiliar(perso) treaeme
-        // el +nombre variable auxiliar:nombre de la ArrayList(lista)
+        //por cada nombre de la clase creada(Persona)+ variable auxiliar(perso): treaeme
+        // los nombres de la ArrayList(lista)
         for (Persona perso:lista) {
             System.out.println("prueba: " + perso.getNombre());
         }
