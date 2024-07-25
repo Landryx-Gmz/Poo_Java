@@ -1,0 +1,24 @@
+                                        --COLLECTION EN JAVA--
+
+
+¿Qué son las Collections en Java?
+
+Las colecciones son estructuras similares a los arreglos(Arrays) pero con la principal característica de que son dinámicos (su tamaño y cantidad de elementos puede variar en el tiempo). En Java, las colecciones se emplean mediante la interfaz “Collection”, que permite implementar una serie de métodos comunes como ser: Añadir, Eliminar, Obtener el tamaño de la colección, etc.
+
+Listas
+Las listas son un conjunto de elementos relacionados entre si que tienen un determinado orden. Su tamaño es dinámico (puede cambiar en el tiempo)
+
+En Java existen diferentes tipos de Listas:
+
+ArrayLists
+LinkedLists
+Stack
+ArrayLists
+Entre los tipos de listas, unas de las más utilizadas son las ArrayLists. Las mismas tienen estas características:
+
+ArrayList es una clase que se representa como una matriz dinámica que permite almacenar elementos.
+Hereda de la clase AbstractList, la cual implementa la interfaz List.
+Permite colecciones o elementos duplicados.
+El orden de los registros es el orden en el que fueron insertados.
+Permite acceso aleatorio (tiene índice)
+Manipulación lenta (recorrer tooodo el Arraylist para hacer un cambio)
