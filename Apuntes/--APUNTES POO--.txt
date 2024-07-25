@@ -205,3 +205,22 @@ Solo puede tener métodos con acceso público (no pueden ser protected o private
 Solo puede tener “variables” public static final (o sea constantes)
 La palabra “abstract” en la definición de métodos no es obligatoria.
 Generalmente las interfaces indican el “PUEDE HACER” de un objeto.
+
+
+
+--Clases Abstractas vs Interfaces--
+
+A continuación te dejamos un resumen de las principales diferencias que tienen entre si:
+
+Las clases abstractas e interfaces ayudan a ordenar código (obliga a las clases a utilizar los mismos métodos y no crear repetidos).
+
+Una clase abstracta puede tener métodos que sean abstractos o que no lo sean, mientras que las interfaces sólo y exclusivamente pueden definir métodos abstractos.
+
+Una clase abstracta puede heredar o extender de cualquier clase (independientemente de que esta sea abstracta o no), mientras que una interfaz solamente puede implementar otras interfaces.
+
+Una clase abstracta puede heredar de una sola clase (abstracta o no) mientras que una interfaz puede extender de varias interfaces de una misma vez.
+
+En una clase abstracta, los métodos abstractos pueden ser public o protected. En una interfaz solamente puede haber métodos públicos.
+
+Las clases abstractas explican mayoritariamente el “ES/SER” de un objeto mientras que
+las interfaces explican el “PUEDE HACER”.
