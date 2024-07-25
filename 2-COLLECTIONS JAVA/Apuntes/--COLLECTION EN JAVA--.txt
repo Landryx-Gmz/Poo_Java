@@ -16,9 +16,24 @@ Stack
 ArrayLists
 Entre los tipos de listas, unas de las más utilizadas son las ArrayLists. Las mismas tienen estas características:
 
-ArrayList es una clase que se representa como una matriz dinámica que permite almacenar elementos.
+--ArrayList--
+
+Es una clase que se representa como una matriz dinámica que permite almacenar elementos.
 Hereda de la clase AbstractList, la cual implementa la interfaz List.
 Permite colecciones o elementos duplicados.
 El orden de los registros es el orden en el que fueron insertados.
 Permite acceso aleatorio (tiene índice)
 Manipulación lenta (recorrer tooodo el Arraylist para hacer un cambio)
+
+
+
+--LinkedLists--
+
+Una LinkedList en Java es una estructura de datos que representa una lista doblemente enlazada.  Se diferencia de los ArrayLists porque sus elementos no se almacenan en ubicaciones contiguas de memoria.
+
+En una LinkedList, cada elemento, llamado nodo, contiene un valor y una referencia al siguiente nodo en la lista. El primer nodo se llama «cabeza» y el último nodo se llama «cola». Si un nodo no tiene un siguiente nodo, su referencia es nula, lo que indica el final de la lista.
+
+
+La LinkedList proporciona métodos para agregar, eliminar y acceder a elementos en la lista. Por ejemplo, se pueden agregar elementos al principio o al final de la lista utilizando los métodos addFirst() y addLast(). También eliminar elementos con los métodos removeFirst() y removeLast(). Además, es posible siempre acceder a elementos individuales utilizando el método get() o recorrer la lista utilizando un iterador o un for each.
+
+La principal ventaja de una LinkedList es que permite una inserción y eliminación eficiente de elementos en cualquier posición de la lista, ya que solo se necesitan actualizar las referencias de los nodos adyacentes. Sin embargo, el acceso a elementos en una posición específica es menos eficiente que en un arreglo, ya que la LinkedList debe recorrer los nodos desde el principio o desde la posición inicial hasta llegar al elemento deseado.
