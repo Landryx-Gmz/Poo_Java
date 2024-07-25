@@ -8,6 +8,8 @@ public class Arraylist {
     // Luego tiene que ser igual a new ArrayList<"nombre de la clase o interfaz>()
     // con sus parentecis para indicar que es una construccion de arraylist.
         List<Persona> lista = new ArrayList<Persona>();
+
+        
     //Mediante el nombre que hemos asignado seguido de .add()
     // agregamos para crear con new Persona, un personaje nuevo en la lista.
         lista.add(new Persona(1,"Andy",35));
