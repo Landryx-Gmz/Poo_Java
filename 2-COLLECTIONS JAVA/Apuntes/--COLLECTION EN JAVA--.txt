@@ -37,3 +37,24 @@ En una LinkedList, cada elemento, llamado nodo, contiene un valor y una referenc
 La LinkedList proporciona métodos para agregar, eliminar y acceder a elementos en la lista. Por ejemplo, se pueden agregar elementos al principio o al final de la lista utilizando los métodos addFirst() y addLast(). También eliminar elementos con los métodos removeFirst() y removeLast(). Además, es posible siempre acceder a elementos individuales utilizando el método get() o recorrer la lista utilizando un iterador o un for each.
 
 La principal ventaja de una LinkedList es que permite una inserción y eliminación eficiente de elementos en cualquier posición de la lista, ya que solo se necesitan actualizar las referencias de los nodos adyacentes. Sin embargo, el acceso a elementos en una posición específica es menos eficiente que en un arreglo, ya que la LinkedList debe recorrer los nodos desde el principio o desde la posición inicial hasta llegar al elemento deseado.
+
+
+
+
+--Diferencias entre ArrayLists y LinkedLists--
+
+ArrayList y LinkedList son dos implementaciones de la interfaz List en Java que se utilizan para almacenar y manipular colecciones de elementos. Aunque ambos cumplen la misma funcionalidad básica, existen diferencias clave en cómo se almacenan y acceden a los elementos, lo que afecta su rendimiento en diferentes situaciones.
+
+ArrayList utiliza un arreglo interno para almacenar los elementos de la lista de manera contigua en memoria. Esto permite un acceso rápido a elementos individuales utilizando índices, lo que significa que se puede acceder a cualquier elemento directamente. Sin embargo, la inserción o eliminación de elementos en posiciones intermedias puede ser costosa, ya que los elementos adyacentes deben desplazarse para hacer espacio o llenar el vacío.
+
+En resumen, ArrayList es ideal cuando se requiere un acceso rápido a elementos específicos y las operaciones de inserción y eliminación no son frecuentes o críticas para el rendimiento.
+
+Por otro lado, LinkedList utiliza una estructura de lista enlazada, donde cada elemento (nodo) contiene una referencia al siguiente nodo en la lista. Los elementos no están almacenados de manera contigua en memoria, lo que hace que el acceso directo a elementos mediante índices sea menos eficiente que en ArrayList.
+
+Sin embargo, LinkedList es eficiente para la inserción y eliminación de elementos en cualquier posición, ya que solo se necesitan actualizar las referencias de los nodos adyacentes.
+
+En otras palabras, si es necesario realizar operaciones frecuentes de inserción o eliminación en diferentes posiciones de la lista, LinkedList puede ser más adecuado.
+
+En conclusión, la elección entre ArrayList y LinkedList depende de las operaciones que se realizarán con mayor frecuencia en tu programa. Si necesitas un acceso rápido a elementos individuales y las operaciones de inserción y eliminación no son frecuentes, ArrayList es una buena opción. Por otro lado, si las operaciones de inserción y eliminación son más frecuentes y la accesibilidad directa a elementos no es una prioridad, LinkedList puede ser más eficiente.
+
+Antes de tomar una decisión de cuál de las dos utilizar, hay que considerar las características y requisitos específicos del programa  a desarrollar para tomar la decisión más adecuada.
