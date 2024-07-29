@@ -58,3 +58,15 @@ En otras palabras, si es necesario realizar operaciones frecuentes de inserción
 En conclusión, la elección entre ArrayList y LinkedList depende de las operaciones que se realizarán con mayor frecuencia en tu programa. Si necesitas un acceso rápido a elementos individuales y las operaciones de inserción y eliminación no son frecuentes, ArrayList es una buena opción. Por otro lado, si las operaciones de inserción y eliminación son más frecuentes y la accesibilidad directa a elementos no es una prioridad, LinkedList puede ser más eficiente.
 
 Antes de tomar una decisión de cuál de las dos utilizar, hay que considerar las características y requisitos específicos del programa  a desarrollar para tomar la decisión más adecuada.
+
+
+---Stacks (Pilas)---
+Una pila, también conocida como stack en inglés, es una estructura de datos en la que los elementos se agregan y eliminan según un principio conocido como «LIFO» (Last-In, First-Out), es decir, el último elemento agregado es el primero en ser eliminado.
+
+Utilizan una serie de métodos propios para realizar ciertas operaciones. Entre ellos se encuentran:
+
+push: Coloca un elemento al tope de la pila.
+pop: Borra el último elemento de la pila.
+isEmpty: Devuelve true o false dependiendo si la pila está vacía o no.
+peek: Mostrar el elemento tope de la lista SIN ELIMINAR
+search: Buscar elemento específico de la pila.
