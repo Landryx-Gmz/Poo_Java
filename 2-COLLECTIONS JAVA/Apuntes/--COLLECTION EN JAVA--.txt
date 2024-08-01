@@ -70,3 +70,43 @@ pop: Borra el último elemento de la pila.
 isEmpty: Devuelve true o false dependiendo si la pila está vacía o no.
 peek: Mostrar el elemento tope de la lista SIN ELIMINAR
 search: Buscar elemento específico de la pila.
+
+
+
+--Introducción a los Maps en Java--
+
+En Java, un mapa (o mapeo) es una interfaz que forma parte del framework de colecciones (java.util) y representa una colección de pares clave-valor, donde cada clave está asociada a un valor único.
+
+La relación clave-valor proporciona una forma eficiente de acceder y gestionar datos, ya que se puede buscar un valor asociado a una clave de manera rápida.
+
+En un mapa, las claves y los valores pueden ser de cualquier tipo de objeto, y cada clave debe ser única, es decir, que no pueden haber claves duplicadas dentro de un mismo mapa, pero sí pueden haber valores duplicados asociados a distintas claves.
+
+La interfaz Map en Java tiene varias implementaciones, cada una con características específicas. Algunas de las implementaciones más comunes son HashMap, TreeMap, LinkedHashMap, HashTable, y ConcurrentHashMap. Cada implementación tiene sus propias características, como eficiencia en la búsqueda, capacidad de ordenamiento, y consideraciones de concurrencia. Hoy nos centraremos en Hash Map.
+
+
+
+--Hash Map--
+
+En Java, HashMap es una implementación de la interfaz Map, que utiliza una estructura de datos de tabla de dispersión para almacenar pares clave-valor.
+
+Entre sus principales características encontramos:
+
+Eficiencia en la Búsqueda: La búsqueda, inserción y eliminación de elementos en un HashMap son operaciones de tiempo constante en promedio (O(1)), siempre y cuando la función de dispersión distribuya las claves de manera uniforme.
+
+No Garantiza el Orden: La implementación de HashMap no garantiza el orden de los elementos. Si necesitas un orden específico, puedes considerar utilizar LinkedHashMap.
+
+Permite Claves y Valores Nulos:  HashMap permite que tanto las claves como los valores sean nulos.
+
+Iteración a través de Entradas: Puedes iterar a través de las entradas del HashMap utilizando un Iterator o un bucle for-each.
+
+--Métodos de Map--
+
+La interfaz Map tiene una serie de métodos que podemos utilizar:
+
+*put(C clave, V valor): Agrega un par clave-valor a la collection Map.
+*get(object clave): Devuelve el valor asociado a la clave bindada o null si la clave no existe.
+*containsKey(Object clave):Verifica si el Map contiene la clave especificada.
+*costainsValue(objet valor):Comprueba si el Map contiene el valor especificado.
+*remove(object clave):Elimina el registro asociado a la clave brindada.
+*KeySet():Devuelve un conjunto de todas las claves en el Map.
+*values():Devuelve una colección de todos los valores que contiene el Map.
