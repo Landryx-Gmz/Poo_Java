@@ -1,0 +1,50 @@
+                                                               ----Conceptos Importantes en Java----
+
+Excepciones en Java
+En Java, una excepción es un evento o condición inusual que ocurre durante la ejecución de un programa y que interrumpe el flujo normal de ejecución. Las excepciones se utilizan para manejar y señalar errores y situaciones excepcionales.
+
+Muchas cosas pueden causar excepciones, entre ellas:
+
+Errores de hardware
+Operaciones matemáticas no posibles (Ej: dividir por cero)
+Errores de programa (Ej: error de desbordamiento de un arreglo)
+Apertura de un archivo inexistente
+Entre otras…
+Tipos de Excepciones
+Hay dos tipos bien diferenciados:
+
+Propias de Java como lenguaje
+Personalizadas
+Propias de Java
+Entre las propias de Java podemos encontrarnos con las siguientes:
+
+
+Aquí hay una lista de algunas de las excepciones propias de Java más comunes:
+
+ArithmeticException: Se lanza cuando ocurre un error aritmético, como la división por cero.
+ArrayIndexOutOfBoundsException: Se lanza cuando se intenta acceder a un índice fuera de los límites de un array.
+ArrayStoreException: Se lanza cuando se intenta almacenar un tipo de objeto incompatible en un array de objetos.
+ClassCastException: Se lanza cuando se intenta convertir un objeto a una subclase de la que no es una instancia.
+IllegalArgumentException: Se lanza cuando un método recibe un argumento inapropiado.
+NumberFormatException: Una subclase de IllegalArgumentException, lanzada cuando un intento de conversión de cadena a número falla.
+IllegalStateException: Se lanza cuando el entorno o estado de una operación no es adecuado para ejecutar la operación solicitada.
+NullPointerException: Se lanza cuando un intento de usar una referencia de objeto que no tiene valor se realiza (es decir, la referencia es null).
+NegativeArraySizeException: Se lanza si se intenta crear un array con un tamaño negativo.
+IndexOutOfBoundsException: Se lanza cuando se intenta acceder a un índice fuera del rango de una lista, cadena o array.
+StringIndexOutOfBoundsException: Se lanza si se intenta acceder a un índice fuera de los límites de una cadena.
+UnsupportedOperationException: Se lanza cuando una operación específica no está soportada.
+Estas son algunas de las excepciones no comprobadas más comunes. Es importante recordar que, aunque no es obligatorio manejarlas, es buena práctica hacerlo para evitar que la aplicación falle inesperadamente debido a errores no controlados. Además, los desarrolladores pueden crear sus propias excepciones no comprobadas extendiendo RuntimeException.
+
+
+Cada una de ellas puede ser utilizada en diferentes situaciones, por ejemplo, FileNotFoundException cuando no se encuentra un archivo o ArrayIndexOutOfBoundsException cuando se intenta acceder a una posición fuera de un array.
+
+
+
+--Personalizadas--
+Para poder construir excepciones propias, hay que tener en cuenta los siguientes bloques:
+
+try: Bloque donde puede ocurrir la excepción.
+catch: Es como el “else” del try (se ejecuta al dispararse una excepción en el bloque try).
+finally: Bloque de código que se ejecuta siempre (sin importar si hubieron errores o no).
+throw: Lanzar una excepción cualquiera.
+throws: Determinar qué excepciones puede lanzar un método.
