@@ -48,3 +48,83 @@ catch: Es como el “else” del try (se ejecuta al dispararse una excepción en
 finally: Bloque de código que se ejecuta siempre (sin importar si hubieron errores o no).
 throw: Lanzar una excepción cualquiera.
 throws: Determinar qué excepciones puede lanzar un método.
+
+
+Relaciones entre Clases en Java
+En Java, las relaciones entre clases se establecen mediante conceptos de programación orientada a objetos, como la herencia, la composición y la asociación.
+
+Estas relaciones permiten establecer conexiones y dependencias entre diferentes clases para modelar la estructura y el comportamiento de un sistema.
+
+Anteriormente vimos cómo funciona la herencia, ahora pasemos a ver cómo son las relaciones 1 a 1, 1 a n y n a n entre clases.
+
+Relación 1 a 1
+Este tipo de relación se lleva a cabo mediante la creación de un objeto como atributo o variable de instancia dentro de una clase. En este tipo de relación, cada objeto de la primera clase tiene una referencia única y exclusiva a un objeto de la segunda clase, y viceversa. Por ejemplo:
+
+//ejemplo relación 1 a 1 entre dos clases
+
+
+public class ClaseA {
+
+private int id;
+private String nombre;
+private ClaseB objetoB;
+
+// …
+
+}
+
+Relación 1 a n
+En programación orientada a objetos (POO), una relación uno a muchos implica que un objeto de una clase se relaciona con varios objetos de otra clase.
+
+En este tipo de relación, un objeto de la primera clase puede tener referencias múltiples a objetos de la segunda clase, pero cada objeto de la segunda clase solo está asociado a un único objeto de la primera. Esto se logra generalmente mediante el uso de Collections, como ser por ejemplo List, ArrayList, LinkedList, Hash, etc.
+
+Por ejemplo, supongamos que queremos relacionar la clase Compra con la clase Items, donde cada compra puede tener varios Items, lo haríamos de la siguiente manera:
+
+//ejemplo relación 1 a n entre dos clases
+
+
+public class Compra {
+
+private int id;
+private String nombre;
+private List<Item> listaItems;
+
+// …
+
+}
+
+Relación n a n
+Una relación muchos a muchos (n a n) en Java con POO implica que múltiples objetos de una clase se pueden relacionar con múltiples objetos de otra y viceversa.
+
+Esto generalmente se logra mediante el uso de Collections en «ambos lados» de las relaciones, es decir, en ambas clases que se quieren relacionar entre si, dado que recordemos que, las relaciones n a n no son ni más ni menos que dos relaciones 1 a n enfrentadas entre si.
+
+Por otro lado, como generalmente las relaciones n a n luego también son mapeadas en bases de datos, existen casos en donde se puede aplicar la misma teoría que en base de datos, donde es posible la creación de una clase intermedia que agregue información extra a las relaciones existentes entre ambas clases. Sin embargo, en casos donde se usen ORMs (como por ejemplo JPA + Hibernate), no suele ser necesaria esta creación de clase intermedia ya que el mismo ORM (concepto que veremos en clases más adelante) se encarga de crear todo de forma automática.
+
+Supongamos un ejemplo donde una clase Alumnos tiene una relación n a n con una clase Materia, donde muchos Alumnos pueden estar en muchas materias, y muchas materias pueden tener muchos alumnos:
+
+
+//ejemplo relación n a n entre dos clases
+//Clase Alumno
+
+public class Alumno {
+
+private int id;
+private String nombreAlumno;
+private List<Materia> listaMaterias;
+
+// …
+
+}
+
+//ejemplo relación n a n entre dos clases
+//Clase Materia
+
+public class Materia{
+
+private int id;
+private String nombreMateria;
+private List<Alumno> listaAlumnos;
+
+// …
+
+}
