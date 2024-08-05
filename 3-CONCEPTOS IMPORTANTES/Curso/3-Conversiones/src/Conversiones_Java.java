@@ -36,8 +36,8 @@ public class Conversiones_Java {
         double estatura = 1.67;
 
         String edadString = String.valueOf(edad);
-        String estaturaStrig = String.valueOf(estatura);
+        String estaturaString = String.valueOf(estatura);
 
-        System.out.println("Edad: " + edadString + " Estatura: " + estaturaStrig);
+        System.out.println("Edad: " + edadString + " Estatura: " + estaturaString);
     }
 }
