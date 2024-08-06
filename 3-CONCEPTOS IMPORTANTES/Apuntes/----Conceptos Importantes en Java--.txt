@@ -184,3 +184,61 @@ public enum Dia {
 LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
 
 }
+
+ENUMS o enumeraciones
+Un enum (abreviatura de «enumeration») es un tipo de dato especial en Java que permite definir un grupo de constantes con nombres específicos. Cada constante en un enum es una instancia única de ese enum.
+
+Los enums en Java son, básicamente, una forma de definir un conjunto fijo de constantes, como los días de la semana, los meses del año, o los estados de un semáforo.
+
+¿Por qué se usan?
+Se usan para representar valores que no cambian. Por ejemplo, si estás trabajando con los días de la semana, puedes definir un enum que contenga todos los días: Lunes, Martes, Miércoles, etc. Así, puedes asegurarte de que las únicas opciones válidas para un día de la semana sean estas y que no haya posibilidad de que se ingresen otras.
+
+Sintaxis básica
+La sintaxis básica para definir un enum es la siguiente:
+
+public enum Dia {
+
+LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
+
+}
+
+
+
+     ----Generics o Genéricos en Java----
+
+Los genéricos en Java son una característica que permite definir clases, interfaces y métodos con tipos de datos parametrizados. Esto significa que se puede escribir código mas flexible y reutilizable, manteniendo al mismo tiempo la seguridad de tipos en tiempo de compilación.
+
+Los genéricos fueron introducidos en Java con la versión 5.0 y su principal objetivo es proporcionar una manera de manejar objetos de diferentes tipos sin perder la seguridad y/o integridad de los tipos de datos.
+
+Sintaxis Básicas
+
+La sintaxis de los genéricos se basa en el uso de <T>, conde T es un tipo de parámetro que representa un tipo de dato genérico que podría ir en su lugar.
+
+Creamos una clase caja donde queramos guardar contenido sin importar su tipo de dato:
+
+
+
+public calss Caja {
+ private T contenido:
+
+ public void poner(T contenido) {
+	this.contenido =contenido;
+  }
+
+
+ public T sacar() {
+	return contenido;
+  }
+}
+
+
+Luego desde el Main, hagamos uso de esta clase con diferentes tipos de contenido:
+
+	caja cajaDeString = new Caja<>();
+cajaDeString.poner("Hola");
+String contenido = cajaDeString.sacar();
+
+
+Caja CajaDeEnteros = new Caja<>();
+CajaDeEnteros.poner(123);
+Integer numero = cajaDeEnteros.sacar();	
