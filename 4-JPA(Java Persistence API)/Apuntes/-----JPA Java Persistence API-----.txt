@@ -1,0 +1,102 @@
+      -----JPA Java Persistence API-----
+         (CRUD en BD MySQL con Java) 
+
+
+---Java Persistence API---
+JPA es un ORM (Object Relational Mapping) que tiene como objetivo lograr la persistencia de datos entre una aplicación desarrollada en Java y una base de datos.
+
+JPA busca traducir el modelado de las clases Java a un modelado relacional en una base de datos, posibilitando al programador elegir qué clases u objetos quiere persistir.
+
+
+¿Cómo funciona JPA?
+JPA se vale de una serie de mapeos que se deben realizar sobre cada uno de los elementos de una clase, los mismos, se representan mediante annotations(@).
+
+JPA cuenta con proveedores de JPA, entre ellos: Eclipselink, Hibernate, Toplink, entre otros.
+
+
+Aplicación Java ----> JPA + Proveedor de JPA ------> BD(Base de datos).
+
+
+
+
+
+
+                               -----ORM + Annotations en JPA-----
+
+
+¿Qué es una ORM (Object-Relatonial Mapping?
+
+El mapeo Objeto-Relacional, ORM en inglés, es una técnica utilizada para convertir clases (y sus relaciones) de un systema que utiliza un lenguaje de programación orientado a objetos a el modelado de una base de datos relacional.
+
+¿Cómo hace ORM este mapeo?  
+Mediante una serie de "indicaciones" que se realizan utilizando un concepto llamado "Annotations".
+
+
+--Clase1--    --Clase2--
+     |             |
+     |_____________|
+            |
+           ORM
+            |
+      (Base de tatos)
+
+
+
+
+¿Qué y cuáles son las Annotations de JPA?
+
+En el contexto de Java Persistence API(JPA), las anotaciones son elementos de metadatos que se utilizan para proporcionar información adicional sobre las clases y sus atributos, que es utilizado luego por el proveedor de persistencia para realizar operaciones de persistencia en la base de datos.
+
+
+Entre las Annotations más utilizadas en JPA encontramos:
+
+* @Entity: Especifica la creación de una entidad. Se coloca al inicio de la definición de una clase.
+* @Id: Primary key de la entidad.
+  -@GeneratedValue(strategy=GenerationType.SEQUENCE):Establece que la ID se va a generar de forma automática y secuencial.
+*@Basic:Para hacer referencia atributos comunes.
+*@Temporal:Se usa normalmente en fechas.
+  -Si se quiere tener en cuenta la hora se utiliza:@Temporal(TemporalType.TIMESTAMP)
+  -Si solo se tiene en cuenta la fecha(DATE):@Temporal(TemporalType.DATE)
+*@OneToMany:Indicar una relación unidireccional de 1 a n.
+*@OneToOne:Indicar una relación 1 a 1.
+*@ManyToMany:Indicar una relación n a n.
+
+
+Ejemplo de clase mapeada en Java:
+
+
+@Entity
+public class Alumno {
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO )
+    private int id;
+    @Basic
+    private String nombre;
+    private String apellido;
+    
+    
+    @Temporal(TemporalType.DATE)
+    private Date fechaNac;
+
+
+-Luego se tienen que agregar como entidad a nuestra unidad de persistencia en el IDE que tengamos.
+-Una vez terminado de agregar, ya tendremos nuestra clase completamente mapeada.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

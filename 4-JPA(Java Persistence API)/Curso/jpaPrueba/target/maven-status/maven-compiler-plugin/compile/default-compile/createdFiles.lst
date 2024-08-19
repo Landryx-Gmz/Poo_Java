@@ -1,0 +1,12 @@
+mypc\jpaprueba\logica\Alumno_.class
+mypc\jpaprueba\persistencia\AlumnoJpaController.class
+mypc\jpaprueba\persistencia\ControladoraPersistencia.class
+mypc\jpaprueba\logica\ControladoraLogica.class
+mypc\jpaprueba\persistencia\exceptions\NonexistentEntityException.class
+mypc\jpaprueba\persistencia\CarreraJpaController.class
+mypc\jpaprueba\JpaPrueba.class
+mypc\jpaprueba\logica\Alumno.class
+mypc\jpaprueba\persistencia\exceptions\IllegalOrphanException.class
+mypc\jpaprueba\logica\Carrera.class
+mypc\jpaprueba\persistencia\exceptions\PreexistingEntityException.class
+mypc\jpaprueba\logica\Carrera_.class
